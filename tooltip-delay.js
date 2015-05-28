@@ -18,7 +18,8 @@
         if (delayForDisplay) {
             timerId = window.setTimeout(function () {
 
-                if (point === chart.hoverPoint || $.inArray(chart.hoverPoint, point) > -1) {
+                //if (point === chart.hoverPoint || $.inArray(chart.hoverPoint, point) > -1) {
+                if (point === chart.hoverPoint) {
                     proceed.apply(tooltip, Array.prototype.slice.call(refreshArguments, 1));
                 }
 
